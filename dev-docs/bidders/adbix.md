@@ -31,7 +31,7 @@ sidebarType: 1
 
 Adbix is a global ad network connecting premium publishers with high-quality display demand through a server-to-server bidding engine. The Adbix Prebid.js adapter brings Adbix demand into header bidding auctions for banner inventory via OpenRTB.
 
-The Adbix bidding adapter requires publisher setup and approval before use. For setup and publisher documentation, contact [support@adbix.net](mailto:support@adbix.net) or visit the [Adbix Publisher Documentation](https://adbix.net/documentation.php).
+The Adbix bidding adapter requires publisher setup and approval before use. For setup and publisher documentation, contact support@adbix.net or visit https://adbix.net/documentation.php
 
 ### Bid params
 
@@ -61,3 +61,24 @@ var adUnits = [{
     }
   }]
 }];
+```
+
+### User Sync
+
+The Adbix adapter supports image pixel user syncs, which are gated by the pixelEnabled config option:
+
+```javascript
+pbjs.setConfig({
+  userSync: {
+    pixelEnabled: true,
+    filterSettings: {
+      image: {
+        bidders: 'adbix',
+        filter: 'include'
+      }
+    }
+  }
+});
+```
+
+Note: Combine the above configuration with any other UserSync configuration. Multiple setConfig() calls overwrite each other and only the last call for a given attribute will take effect.
