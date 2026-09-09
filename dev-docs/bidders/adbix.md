@@ -35,5 +35,12 @@ The adapter may register an image user-sync request when image/pixel syncing is 
 
 User-sync endpoint:
 
-```text
-https://adbix.net/sync/index.php
+    https://adbix.net/sync/index.php
+
+The auction continues to work when image user syncing is disabled.
+
+### Privacy
+
+For information about Adbix privacy practices, see:
+
+    https://adbix.net/privacy-policy.php
