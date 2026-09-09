@@ -12,11 +12,11 @@ schain_supported: true
 sidebarType: 1
 ---
 
-### Registration
+## Registration
 
 To use the Adbix bidder you will need a valid publisher ID and placement ID from Adbix. For further information, please contact <admin@adbix.net>.
 
-### Bid Params
+## Bid Params
 
 {: .table .table-bordered .table-striped }
 | Name          | Scope    | Description                         | Example            | Type      |
@@ -25,11 +25,11 @@ To use the Adbix bidder you will need a valid publisher ID and placement ID from
 | `placementId` | required | Adbix placement identifier          | `'test-300x250'`   | `string`  |
 | `test`        | optional | Enables the Adbix test response     | `true`             | `boolean` |
 
-### Supported Media Types
+## Supported Media Types
 
 - Banner
 
-### User Sync
+## User Sync
 
 The adapter may register an image user-sync request when image/pixel syncing is enabled by the publisher.
 
@@ -39,7 +39,7 @@ User-sync endpoint:
 
 The auction continues to work when image user syncing is disabled.
 
-### Privacy
+## Privacy
 
 For information about Adbix privacy practices, see:
 
